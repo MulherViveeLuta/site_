@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+:root {
+    --color-primary:#A6BFA5;
+    --color-secondary:#c1d8c1;
+    --color-black:#000;
+    --color-white:#fff;
+}
+
+body {
+    background: linear-gradient(90deg, #ebfceb  100%, #deffdd  50%);
+    padding: 0 1rem;
+}
+
+header,
+  .abas-section,
+  .abascardes-section, 
+footer {
+    border-color: var(--color-black);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 1.25rem;
+
+}
+ 
+header img {
+    display: block;
+    margin: 1rem auto;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto 0;
+}
+
+nav a {
+    color: var(--color-black);
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+header nav a:nth-child(2n-1) {
+    text-align: right;
+}
+
+.button {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    color: var(--color-black);
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    max-width: 8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2 {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    color: var(--color-black);
+    display: block;
+    font-size: 1.10rem;
+    padding: 1rem 1rem;
+    max-width: 15rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+
+.hero-section img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 105%;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.hero-section .button {
+    position: relative;
+}
+
+.hero-section .button:after {
+    content: ' ';
+    background: url('E:/2ano/Site_tcc/_imgs/setinhacurvada.png');
+    position: absolute;
+    top: 5rem;
+    right: -4rem;
+    height: 48px;
+    width: 132px;
+}
+
+.decoration {
+    display: block;
+    position: relative;
+}
+
+.decoration:after {
+    content: ' ';
+    background: url('E:/2ano/Site_tcc/_imgs/linhas.png');
+    position: absolute;
+    top: -0.75rem;
+    height: 36px;
+    width: 40px;
+}
+
+.courses-section {
+    padding-bottom: 8rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    max-width: 17rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.cardtwo {
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    max-width: 17,5rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.cardthree {
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    max-width: 55rem;
+    padding: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-white);
+}
+
+.cardtwo:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-white);
+}
+
+.cardthree:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-white);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cardtwo strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cardthree strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+.cardtwo a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+.cardthree a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+
+/* Rodapé */
+
+footer {
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a{
+    display: block;
+    padding-left: 0;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.newsletter-form input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 4px var(--color-black);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+/* Classes utilitarias */
+
+.text-center {
+     text-align: center;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.icones { 
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.icones2 { 
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.setas {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 800px;
+    right: 800px;
+    margin: 10px;
+}
+
+p.grande {
+    line-height: 1.5;
+  }
+
+
+/* Responsividade */
+
+@media screen and (min-width: 40rem) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+}
+
+  .cards {
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.card:nth-child(2n) {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+    header img,
+    header nav,
+    header .button {
+        margin: 0;
+    }
+
+@media screen and (min-width: 72rem) {
+    h1, h2 {
+        font-size: 4rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+}
+   .container.row-reverse {
+     flex-direction: row-reverse;
+    }
+
+   .about-column {
+     flex: 2;
+    }
+    .about-column p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+    .newsletter-form {
+        flex: 3;
+    }
+
+@media screen and (min-width: 80rem) {
+    .container {
+        max-width: 80rem;
+    }
+}
+    
